@@ -1,0 +1,82 @@
+{
+    "sourceFile": "COURSE010/fac.c",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1634557231459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1634557237560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-#include<s>\n\\ No newline at end of file\n+#include<stdio.h>\r\n"
+                },
+                {
+                    "date": 1634557250290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,12 @@\n #include<stdio.h>\r\n+\r\n+int main ()\r\n+{\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+    \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634557255872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n #include<stdio.h>\r\n \r\n int main ()\r\n+\r\n {\r\n \r\n \r\n+printf\r\n \r\n \r\n \r\n \r\n-    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634557263648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,11 @@\n int main ()\r\n \r\n {\r\n \r\n+    int a,b;\r\n \r\n+\r\n printf\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1634557268933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,12 @@\n int main ()\r\n \r\n {\r\n \r\n-    int a,b;\r\n+    int a,ans;\r\n \r\n \r\n-printf\r\n+printf(\"\")\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1634557277906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n     int a,ans;\r\n \r\n \r\n-printf(\"\")\r\n+printf(\"Enter the number for factorial :\")\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1634557283150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n \r\n     int a,ans;\r\n \r\n \r\n-printf(\"Enter the number for factorial :\")\r\n+printf(\"Enter the number for factorial :\");\r\n+scanf(\"\")\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1634557319399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     int a,ans;\r\n \r\n \r\n printf(\"Enter the number for factorial :\");\r\n-scanf(\"\")\r\n+scanf(\"%d\")\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1634557325194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,12 @@\n     int a,ans;\r\n \r\n \r\n printf(\"Enter the number for factorial :\");\r\n-scanf(\"%d\")\r\n+scanf(\"%d\",&a);\r\n \r\n \r\n \r\n \r\n+\r\n+\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634557338029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,13 @@\n \r\n printf(\"Enter the number for factorial :\");\r\n scanf(\"%d\",&a);\r\n \r\n+ans = \r\n \r\n \r\n+printf()\r\n \r\n \r\n \r\n+\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634557349679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n ans = \r\n \r\n \r\n-printf()\r\n+printf(\"The Answer is %d\")\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1634557354965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n ans = \r\n \r\n \r\n-printf(\"The Answer is %d\")\r\n+printf(\"The Answer is %d\\n\",ans)\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1634557365026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,13 +9,15 @@\n \r\n printf(\"Enter the number for factorial :\");\r\n scanf(\"%d\",&a);\r\n \r\n-ans = \r\n \r\n+ans = a*\r\n \r\n-printf(\"The Answer is %d\\n\",ans)\r\n \r\n+printf(\"The Answer is %d\\n\",ans);\r\n \r\n \r\n \r\n+\r\n+\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634557371381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n printf(\"Enter the number for factorial :\");\r\n scanf(\"%d\",&a);\r\n \r\n \r\n-ans = a*\r\n+ans = (a*a\r\n \r\n \r\n printf(\"The Answer is %d\\n\",ans);\r\n \r\n"
+                },
+                {
+                    "date": 1634557378847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n printf(\"Enter the number for factorial :\");\r\n scanf(\"%d\",&a);\r\n \r\n \r\n-ans = (a*a)\r\n+ans = (a*a);\r\n \r\n \r\n printf(\"The Answer is %d\\n\",ans);\r\n \r\n"
+                },
+                {
+                    "date": 1634557438779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+#include<stdio.h>\r\n+\r\n+int main ()\r\n+\r\n+{\r\n+\r\n+    int a,ans,;\r\n+\r\n+\r\n+printf(\"Enter the number for factorial :\");\r\n+scanf(\"%d\",&a);\r\n+\r\n+\r\n+ans = (ans *= a)\r\n+\r\n+\r\n+printf(\"The Answer is %d\\n\",ans);\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1634557231458,
+            "name": "Commit-0",
+            "content": "#include<s>"
+        }
+    ]
+}

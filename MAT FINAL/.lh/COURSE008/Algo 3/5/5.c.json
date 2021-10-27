@@ -1,0 +1,18 @@
+{
+    "sourceFile": "COURSE008/Algo 3/5/5.c",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1634556819410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1634556819410,
+            "name": "Commit-0",
+            "content": "#include<stdio.h>\r\nint main()\r\n\r\n{\r\n    int result = 0;\r\n    int k,x = 2;\r\n    while(k <= 4)\r\n    {\r\n        result = result + k * k - 3 * k * x + 1;\r\n        k++;\r\n    }\r\n    printf(\"%d\\n\", k);\r\n}"
+        }
+    ]
+}

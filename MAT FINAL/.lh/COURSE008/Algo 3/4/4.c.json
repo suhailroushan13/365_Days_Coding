@@ -1,0 +1,22 @@
+{
+    "sourceFile": "COURSE008/Algo 3/4/4.c",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1634556768683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1634556784263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,14 +2,14 @@\n int main()\r\n {\r\n \r\n     \r\n-int x, sum , j;\r\n+int x, sum= 0 , j;\r\n printf(\"\\nEnter the value of x: \");\r\n scanf(\"%d\", &x);\r\n for (j = 1; j <= 4; j++)\r\n {\r\n     sum = x * j;\r\n }\r\n-printf(\"%d\\n\", sum);\r\n+printf(\"The An%d\\n\", sum);\r\n \r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1634556768683,
+            "name": "Commit-0",
+            "content": "#include<stdio.h>\r\nint main()\r\n{\r\n\r\n    \r\nint x, sum , j;\r\nprintf(\"\\nEnter the value of x: \");\r\nscanf(\"%d\", &x);\r\nfor (j = 1; j <= 4; j++)\r\n{\r\n    sum = x * j;\r\n}\r\nprintf(\"%d\\n\", sum);\r\n\r\n}"
+        }
+    ]
+}

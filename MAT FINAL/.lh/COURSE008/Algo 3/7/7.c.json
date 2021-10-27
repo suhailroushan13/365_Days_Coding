@@ -1,0 +1,34 @@
+{
+    "sourceFile": "COURSE008/Algo 3/7/7.c",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1634556863100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1634556881989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,5 @@\n     return 0;\r\n }\r\n \r\n \r\n-//\n\\ No newline at end of file\n+/\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634556916709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,27 @@\n     return 0;\r\n }\r\n \r\n \r\n-/\n\\ No newline at end of file\n+/*\r\n+\r\n+\r\n+\r\n+*/\r\n+#include <stdio.h>\r\n+\r\n+int main()\r\n+{\r\n+\r\n+    int value = 1, x, n = 0;\r\n+    printf(\"Enter x:\\n\");\r\n+    scanf(\"%d\", &x);\r\n+\r\n+    while (n <= 3)\r\n+    {\r\n+        value *= n + x;\r\n+        n++;\r\n+    }\r\n+\r\n+    printf(\"%d\\n\", value);\r\n+    return 0;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634556923511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,43 @@\n+#include <stdio.h>\r\n+int main()\r\n+\r\n+{\r\n+\r\n+    int n = 0, x, value;\r\n+    printf(\"Enter the value of x:\");\r\n+    scanf(\"%d\", &x);\r\n+\r\n+    while (n <= 3)\r\n+    {\r\n+        value = (n + x)*(n + x)*(n + x);\r\n+        n++;\r\n+    }\r\n+    printf(\"The Value of x is %d\\n\", value);\r\n+\r\n+    return 0;\r\n+}\r\n+\r\n+\r\n+/*\r\n+\r\n+\r\n+\r\n+*/\r\n+/*#include <stdio.h>\r\n+\r\n+int main()\r\n+{\r\n+\r\n+    int value = 1, x, n = 0;\r\n+    printf(\"Enter x:\\n\");\r\n+    scanf(\"%d\", &x);\r\n+\r\n+    while (n <= 3)\r\n+    {\r\n+        value *= n + x;\r\n+        n++;\r\n+    }\r\n+\r\n+    printf(\"%d\\n\", value);\r\n+    return 0;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634556929694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,61 +17,18 @@\n     return 0;\r\n }\r\n \r\n \r\n-/*\r\n \r\n \r\n \r\n-*/\r\n-/*#include <stdio.h>\r\n \r\n-int main()\r\n-{\r\n \r\n-    int value = 1, x, n = 0;\r\n-    printf(\"Enter x:\\n\");\r\n-    scanf(\"%d\", &x);\r\n+/*#include <stdio.h>\r\n \r\n-    while (n <= 3)\r\n-    {\r\n-        value *= n + x;\r\n-        n++;\r\n-    }\r\n-\r\n-    printf(\"%d\\n\", value);\r\n-    return 0;\r\n-}\n-#include <stdio.h>\r\n int main()\r\n-\r\n {\r\n \r\n-    int n = 0, x, value;\r\n-    printf(\"Enter the value of x:\");\r\n-    scanf(\"%d\", &x);\r\n-\r\n-    while (n <= 3)\r\n-    {\r\n-        value = (n + x)*(n + x)*(n + x);\r\n-        n++;\r\n-    }\r\n-    printf(\"The Value of x is %d\\n\", value);\r\n-\r\n-    return 0;\r\n-}\r\n-\r\n-\r\n-/*\r\n-\r\n-\r\n-\r\n-*/\r\n-#include <stdio.h>\r\n-\r\n-int main()\r\n-{\r\n-\r\n     int value = 1, x, n = 0;\r\n     printf(\"Enter x:\\n\");\r\n     scanf(\"%d\", &x);\r\n \r\n"
+                }
+            ],
+            "date": 1634556863100,
+            "name": "Commit-0",
+            "content": "#include <stdio.h>\r\nint main()\r\n\r\n{\r\n\r\n    int n = 0, x, value;\r\n    printf(\"Enter the value of x:\");\r\n    scanf(\"%d\", &x);\r\n\r\n    while (n <= 3)\r\n    {\r\n        value = (n + x)*(n + x)*(n + x);\r\n        n++;\r\n    }\r\n    printf(\"The Value of x is %d\\n\", value);\r\n\r\n    return 0;\r\n}\r\n\r\n\r\n//"
+        }
+    ]
+}
