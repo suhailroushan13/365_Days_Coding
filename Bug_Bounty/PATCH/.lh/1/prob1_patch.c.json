@@ -1,0 +1,62 @@
+{
+    "sourceFile": "1/prob1_patch.c",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1635657195573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1635657359661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n             }\r\n \r\n             CGPA = AllCgpaPoints / AllCredits;\r\n             printf(\"Total Number of Available Credits : %d \\n\", AllCredits);\r\n-            printf(\"Total Number of Secured Credits : %.2f \\n\", AllCgpaPoints);\r\n+            printf(\"Total Number of Secured Credits : %.1f \\n\", AllCgpaPoints);\r\n \r\n             printf(\"\\nYour final CGPA is %0.2f\\n\\n\\n\\a\", CGPA);\r\n             break;\r\n             exit(0);\r\n"
+                },
+                {
+                    "date": 1635657418378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n             }\r\n \r\n             CGPA = AllCgpaPoints / AllCredits;\r\n             printf(\"Total Number of Available Credits : %d \\n\", AllCredits);\r\n-            printf(\"Total Number of Secured Credits : %.1f \\n\", AllCgpaPoints);\r\n+            printf(\"Total Number of Secured Credits : %.2f \\n\", AllCgpaPoints);\r\n \r\n             printf(\"\\nYour final CGPA is %0.2f\\n\\n\\n\\a\", CGPA);\r\n             break;\r\n             exit(0);\r\n"
+                },
+                {
+                    "date": 1635658182419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n+\r\n+\r\n+\r\n+\r\n #include <stdio.h>\r\n #include <stdlib.h>\r\n int main()\r\n \r\n"
+                },
+                {
+                    "date": 1635658189667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n+/* \r\n \r\n \r\n \r\n-\r\n #include <stdio.h>\r\n #include <stdlib.h>\r\n int main()\r\n \r\n"
+                },
+                {
+                    "date": 1635658195959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,15 @@\n-/* \r\n+/*\r\n \r\n \r\n \r\n+\r\n+\r\n+\r\n+ */\r\n+\r\n+\r\n+\r\n #include <stdio.h>\r\n #include <stdlib.h>\r\n int main()\r\n \r\n"
+                },
+                {
+                    "date": 1635658262443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,4 @@\n-/*\r\n-\r\n-\r\n-\r\n-\r\n-\r\n-\r\n- */\r\n-\r\n-\r\n-\r\n #include <stdio.h>\r\n #include <stdlib.h>\r\n int main()\r\n \r\n"
+                },
+                {
+                    "date": 1635658270784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,5 +87,6 @@\n \r\n             exit(0); // exit command exit the ends the loopfrom stdlib.h\r\n         }\r\n     }\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n"
+                },
+                {
+                    "date": 1635658280863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,4 +89,15 @@\n         }\r\n     }\r\n }\r\n \r\n+/*\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+ */\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1635658312731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,14 +90,51 @@\n     }\r\n }\r\n \r\n /*\r\n+Bug At\r\n+Line No.7,56,58,74,77,79\r\n \r\n+Bug at Line No.7\r\n+The Variable (AllCpgaPoints =0 was in Int)\r\n+I Changed that To Float\r\n+int AllCgpaPoints = 0;  Changes to - >> float AllCgpaPoints = 0;\r\n \r\n \r\n+Bug at Line No.56\r\n+The Format Specifer was %d Where the AllCpaPoints is Multiple of Int and Float\r\n+So the Final result will be in float but it was written there %d\r\n+%f for float variables\r\n+So I Changed %d -> %f\r\n \r\n \r\n+Bug at Line No.58\r\n+So the Format Specifer was %f\r\n+but %f will gives the 6 digits after the Exponential\r\n+Like 74.647533\r\n+but we dont need that extra number's\r\n+So we can use %.2f\r\n+Then it will give us 2 digits after point\r\n+Like 74.64\r\n \r\n \r\n+Sentence Error: At 63,65,68\r\n+Its A Sentence Error Where In CGPA we calculate MATS\r\n+But In Code it was Written Courses\r\n \r\n \r\n+Bug at Line No.79\r\n+The Varibale AllCgpaPoints is Taken as float\r\n+but in Printing the statment the format specifer was %d which is used when the\r\n+varibale is int\r\n+%d -> %f\r\n+and take %.2f for 2 taking 2 digits after the value\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n  */\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1635658318073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,10 +131,5 @@\n \r\n \r\n \r\n \r\n-\r\n-\r\n-\r\n-\r\n-\r\n  */\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1635658323431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,9 +127,5 @@\n but in Printing the statment the format specifer was %d which is used when the\r\n varibale is int\r\n %d -> %f\r\n and take %.2f for 2 taking 2 digits after the value\r\n-\r\n-\r\n-\r\n-\r\n  */\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1635657195573,
+            "name": "Commit-0",
+            "content": "#include <stdio.h>\r\n#include <stdlib.h>\r\nint main()\r\n\r\n{\r\n\r\n    int Choice, Total_num_of_Courses, AllCredits = 0, available_credits, AllgradePoints = 0;\r\n    int gradePoints, Mat_Number;\r\n    float MGPA, CGPA, totalMats, n;\r\n    char Name;\r\n    float AllCgpaPoints = 0;\r\n    system(\"clear\");\r\n    printf(\"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\n\");\r\n    printf(\"Welcome To - CS.CODE.IN Imma Analyse ya Score\\n\");\r\n    printf(\"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\n\\n\\n\");\r\n\r\n    while (1)\r\n    {\r\n\r\n        printf(\"Please Choose from the below Menu Options... \\n\\n\");\r\n        printf(\"Press 1 to Calculate MGPA  \\n\");\r\n        printf(\"Press 2 to Calculate CGPA  \\n\");\r\n        printf(\"Press 0 To Exit \\n\\n\");\r\n\r\n        printf(\"Enter your options now from below : \");\r\n        scanf(\"%d\", &Choice);\r\n\r\n        switch (Choice)\r\n\r\n        {\r\n\r\n        case 1:\r\n\r\n            printf(\"\\nStudent Name : \");\r\n            scanf(\"%s\", &Name);\r\n\r\n            printf(\"\\nEnter the MAT Number : \");\r\n            scanf(\"%d\", &Mat_Number);\r\n\r\n            printf(\"\\nEnter the Number of Courses : \");\r\n            scanf(\"%d\", &Total_num_of_Courses);\r\n            printf(\"The Number of courses available are %d\\n \", Total_num_of_Courses);\r\n\r\n            for (int i = 1; i <= Total_num_of_Courses; i++)\r\n            {\r\n                printf(\"\\nEnter credits alloted for course %d: \", i);\r\n                scanf(\"%d\", &available_credits);\r\n                AllCredits = AllCredits + available_credits;\r\n\r\n                printf(\"\\nEnter grade scored for course %d: \", i);\r\n                scanf(\"%d\", &gradePoints);\r\n                AllCgpaPoints = (gradePoints * available_credits) + AllCgpaPoints;\r\n            }\r\n\r\n            printf(\"The Total Number of Available Credits : %d \\n\", AllCredits);\r\n            printf(\"The Total Number of Secured Credits : %.f \\n\", AllCgpaPoints);\r\n            MGPA = (float)AllCgpaPoints / (float)AllCredits;\r\n            printf(\"Your Final MGPA Score : %.1f\\n\\a\", MGPA);\r\n            break;\r\n            exit(0);\r\n\r\n        case 2:\r\n            printf(\"\\nEnter the Number of MATS : \");\r\n            scanf(\"%d\", &Total_num_of_Courses);\r\n            printf(\"The Number of MATS available : %d\\n \", Total_num_of_Courses);\r\n            for (int i = 1; i <= Total_num_of_Courses; i++)\r\n            {\r\n                printf(\"\\nEnter Max. credits for MAT %d: \", i);\r\n                scanf(\"%d\", &available_credits);\r\n                AllCredits = AllCredits + available_credits;\r\n\r\n                printf(\"\\nEnter your MGPA of MAT %d: \", i);\r\n                scanf(\"%f\", &MGPA);\r\n                AllCgpaPoints = (float)(MGPA * available_credits) +(float) AllCgpaPoints;\r\n            }\r\n\r\n            CGPA = AllCgpaPoints / AllCredits;\r\n            printf(\"Total Number of Available Credits : %d \\n\", AllCredits);\r\n            printf(\"Total Number of Secured Credits : %.2f \\n\", AllCgpaPoints);\r\n\r\n            printf(\"\\nYour final CGPA is %0.2f\\n\\n\\n\\a\", CGPA);\r\n            break;\r\n            exit(0);\r\n\r\n        default:\r\n            printf(\"\\n\\nBye Bye\\n\\n\\a\\a\");\r\n\r\n            exit(0); // exit command exit the ends the loopfrom stdlib.h\r\n        }\r\n    }\r\n}"
+        }
+    ]
+}

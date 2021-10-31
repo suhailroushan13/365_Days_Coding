@@ -1,0 +1,54 @@
+{
+    "sourceFile": "2/2patch.c",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1635685285178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1635685291237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,6 +68,28 @@\n         }\r\n     }\r\n }\r\n \r\n+/*\r\n \r\n+Bug at Line No. 60 and  63\r\n \r\n+Bug at Line No.60\r\n+Typecasting Error\r\n+Float was not written At Numerator\r\n+\r\n+cgpa =  matCreditPoints / (float)matCreditsTotal;\r\n+Changed to\r\n+cgpa = (float) matCreditPoints / (float)matCreditsTotal;\r\n+\r\n+Bug at Line No.63\r\n+Line No.63 Was written\r\n+\r\n+matCreditsTotal = 0, matCreditPoints = 0;\r\n+Which is not related to the Problem Calculation\r\n+Which was not nessasary to write at that line\r\n+So you can comment that line or you can removed that line\r\n+Unusal Line was Written at Line No .63\r\n+\r\n+\r\n+\r\n+*/\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1635690502256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,16 +80,9 @@\n cgpa =  matCreditPoints / (float)matCreditsTotal;\r\n Changed to\r\n cgpa = (float) matCreditPoints / (float)matCreditsTotal;\r\n \r\n-Bug at Line No.63\r\n-Line No.63 Was written\r\n \r\n-matCreditsTotal = 0, matCreditPoints = 0;\r\n-Which is not related to the Problem Calculation\r\n-Which was not nessasary to write at that line\r\n-So you can comment that line or you can removed that line\r\n-Unusal Line was Written at Line No .63\r\n \r\n \r\n \r\n */\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1635690953623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         {\r\n         case 1:\r\n             system(\"clear\");\r\n             printf(\"\\nEnter the candidate's name:\");\r\n-            scanf(\" %[^\\n]s\", name);\r\n+            scanf(\" %[^\\n]s\", &name);\r\n             printf(\"Enter the MAT number: \");\r\n             scanf(\"%d\", &matNumber);\r\n             printf(\"Enter the number of courses available: \");\r\n             scanf(\"%d\", &courseCount);\r\n@@ -70,9 +70,9 @@\n }\r\n \r\n /*\r\n \r\n-Bug at Line No. 60 and  63\r\n+Bug at Line No. 60 \r\n \r\n Bug at Line No.60\r\n Typecasting Error\r\n Float was not written At Numerator\r\n"
+                },
+                {
+                    "date": 1635690961310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n }\r\n \r\n /*\r\n \r\n-Bug at Line No. 60 \r\n+Bug at Line No. 60 and 24 \r\n \r\n Bug at Line No.60\r\n Typecasting Error\r\n Float was not written At Numerator\r\n"
+                },
+                {
+                    "date": 1635690972788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,10 @@\n cgpa =  matCreditPoints / (float)matCreditsTotal;\r\n Changed to\r\n cgpa = (float) matCreditPoints / (float)matCreditsTotal;\r\n \r\n+Bug at Line No. 24\r\n+Missing Ad\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1635690985901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,9 @@\n Changed to\r\n cgpa = (float) matCreditPoints / (float)matCreditsTotal;\r\n \r\n Bug at Line No. 24\r\n-Missing Ad\r\n+Missing Address Identifier & at line 24 before va\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1635690992670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,9 @@\n Changed to\r\n cgpa = (float) matCreditPoints / (float)matCreditsTotal;\r\n \r\n Bug at Line No. 24\r\n-Missing Address Identifier & at line 24 before va\r\n+Missing Address Identifier & at line 24 before variable name\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1635698971698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,9 @@\n cgpa =  matCreditPoints / (float)matCreditsTotal;\r\n Changed to\r\n cgpa = (float) matCreditPoints / (float)matCreditsTotal;\r\n \r\n-Bug at Line No. 24\r\n+Bug at Line No. 22\r\n Missing Address Identifier & at line 24 before variable name\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1635698989285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n }\r\n \r\n /*\r\n \r\n-Bug at Line No. 60 and 24 \r\n+Bug at Line No. 60 and 22 \r\n \r\n Bug at Line No.60\r\n Typecasting Error\r\n Float was not written At Numerator\r\n@@ -81,9 +81,9 @@\n Changed to\r\n cgpa = (float) matCreditPoints / (float)matCreditsTotal;\r\n \r\n Bug at Line No. 22\r\n-Missing Address Identifier & at line 24 before variable name\r\n+Missing Address Identifier & at line 22 before variable name\r\n \r\n \r\n \r\n \r\n"
+                }
+            ],
+            "date": 1635685285178,
+            "name": "Commit-0",
+            "content": "#include <stdio.h>\r\n#include <stdlib.h>\r\n\r\nvoid main()\r\n{\r\n    system(\"clear\");\r\n    int op, matNumber, courseCount, courseCredits, creditsTotal = 0, gradePoints, creditPoints = 0, matsCount, matCredits, matCreditsTotal = 0;\r\n    float mgpa, cgpa, matCreditPoints;\r\n    char name[20];\r\n    printf(\"------------ CS.CODE.IN CREDIT SCORE ANALYZER------------\\n\");\r\n\r\n    while (1)\r\n    {\r\n        printf(\"Welcome to the menu. Enter choice.\\n\\n0 To Exit\\n1 To calculate the MGPA\\n2 To calculate the CGPA\\n\");\r\n        scanf(\"%d\", &op);\r\n\r\n        switch (op)\r\n        {\r\n        case 1:\r\n            system(\"clear\");\r\n            printf(\"\\nEnter the candidate's name:\");\r\n            scanf(\" %[^\\n]s\", name);\r\n            printf(\"Enter the MAT number: \");\r\n            scanf(\"%d\", &matNumber);\r\n            printf(\"Enter the number of courses available: \");\r\n            scanf(\"%d\", &courseCount);\r\n            for (int i = 1; i <= courseCount; i++)\r\n            {\r\n                printf(\"\\nEnter total credits alloted for Course %d: \", i);\r\n                scanf(\"%d\", &courseCredits);\r\n                creditsTotal += courseCredits;\r\n                printf(\"Enter Grade points secured for Course %d: \", i);\r\n                scanf(\"%d\", &gradePoints);\r\n                creditPoints += (courseCredits * gradePoints);\r\n            }\r\n            printf(\"\\nTotal number of avaliable credits: %d\\n\", creditsTotal);\r\n            printf(\"Total number of credits secured: %d\\n\", creditPoints);\r\n            mgpa = (float)creditPoints / (float)creditsTotal;\r\n            printf(\"\\nFinal MGPA scored by %s in MAT %d : %.2f\\n---------------------------------------------\\n\", name, matNumber, mgpa);\r\n            creditsTotal = 0, creditPoints = 0;\r\n            break;\r\n\r\n        case 2:\r\n            system(\"clear\");\r\n            printf(\"\\nEnter the candidate's name:\");\r\n            scanf(\" %[^\\n]s\", name);\r\n            printf(\"Enter the total number of MATs: \");\r\n            scanf(\"%d\", &matsCount);\r\n            for (int i = 1; i <= matsCount; i++)\r\n            {\r\n                printf(\"\\nEnter total credits alloted for MAT %d: \", i);\r\n                scanf(\"%d\", &matCredits);\r\n                matCreditsTotal += matCredits;\r\n                printf(\"Enter secured MGPA for MAT %d: \", i);\r\n                scanf(\"%f\", &mgpa);\r\n                matCreditPoints += (matCredits * mgpa);\r\n            }\r\n            printf(\"\\nTotal number of avaliable credits: %d\\n\", matCreditsTotal);\r\n            printf(\"Total number of credits secured: %.2f\\n\", matCreditPoints);\r\n            cgpa = (float) matCreditPoints / (float)matCreditsTotal;\r\n            printf(\"\\nCGPA scored by %s until MAT%d : %.2f\\n---------------------------------------------\\n\", name, matsCount, cgpa);\r\n            // matCreditsTotal = 0, matCreditPoints = 0;\r\n            break;\r\n\r\n        default:\r\n            printf(\"--------------------Thank you, visit again. Bye.---------------------\\n\");\r\n            exit(0);\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n"
+        }
+    ]
+}
